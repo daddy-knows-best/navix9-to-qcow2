@@ -4,6 +4,7 @@ Navix9 Cloud image to qcow2 format
 
 # history
 
+- 08/22/25 v0.1 released
 - 08/22/25 Repo was creted
 
 # Debugging Status
