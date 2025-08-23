@@ -14,12 +14,12 @@ packer {
   }
 }
 
-source "qemu" "rocky95" {
+source "qemu" "navix96" {
   headless                  = true
   accelerator               = "kvm" #"hvf" to run this packer template on MacOS, "kvm" if not
-  iso_url                   = "https://dl.rockylinux.org/pub/rocky/9.5/images/x86_64/Rocky-9-GenericCloud-Base-9.5-20241118.0.x86_64.qcow2"
-  iso_checksum              = "file:./ROCKYSHA256SUMS"
-  output_directory          = "output/rocky95"
+  iso_url                   = "https://dlnavix.navercorp.com/cloud-images/Navix-GenericCloud-9.6-20250708.0.x86_64.qcow2"
+  iso_checksum              = "file:./NAVIX9SHA256SUMS"
+  output_directory          = "output/navix96"
   shutdown_command          = "rm -f /home/packer/.ssh/authorized_keys && sudo rm -f /root/.ssh/authorized_keys && echo 'packer' | sudo -S shutdown -P now"
   disk_size                 = "10G"
   format                    = "qcow2"
@@ -35,7 +35,7 @@ source "qemu" "rocky95" {
   net_device                = "virtio-net"
   boot_wait                 = "15s"
   use_default_display       = true
-  vm_name                   = "rocky95"
+  vm_name                   = "navix96"
   qemuargs = [
     ["-cpu", "host"],
     ["-display", "none"],
@@ -45,7 +45,7 @@ source "qemu" "rocky95" {
 
 
 build {
-  sources = ["source.qemu.rocky95"]
+  sources = ["source.qemu.navix96"]
 
   provisioner "shell" {
     script = "shell/shell-provisioner.sh"
