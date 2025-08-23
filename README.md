@@ -8,15 +8,15 @@ Navix9 Cloud image to qcow2 format
 
 # Debugging Status
 
-I used my baremetal 2013 MacPro Ubuntu 24.04.3 with the latest QEMU/KVM to run Packer template
+I used my baremetal 2013 MacPro Ubuntu 24.04.3 with QEMU/KVM to run Packer template
 
 
 # how to run
 
-I ran on my baremetal 2013 MacPro Ubuntu 24.04.3 with the latest QEMU/KVM
+I ran on my baremetal 2013 MacPro Ubuntu 24.04.3 with the QEMU/KVM
 
 ```
-09:32:54 sajang@macpro navix9-to-qcow2 ±|main ✗|→ time ./build.sh 
+09:32:54 sajang@macpro navix9-to-qcow2 ±|main ✗|→ time ./build.sh
 qemu.navix96: output will be in this color.
 
 ==> qemu.navix96: Retrieving ISO
@@ -97,5 +97,5 @@ Build 'qemu.navix96' finished after 1 minute 13 seconds.
 real	1m17.428s
 user	1m18.776s
 sys	0m18.762s
-09:34:15 sajang@macpro navix9-to-qcow2 ±|main ✗|→ 
+09:34:15 sajang@macpro navix9-to-qcow2 ±|main ✗|→
 ```
