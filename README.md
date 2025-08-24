@@ -100,3 +100,6 @@ user	1m18.776s
 sys	0m18.762s
 09:34:15 sajang@macpro navix9-to-qcow2 ±|main ✗|→
 ```
+The warning message above is from Navix9.6 that the default python version of Navix 9.6 is Python 3.9.21 :
+
+<img width="665" height="469" alt="image" src="https://github.com/user-attachments/assets/52039619-d0c2-4eb0-9e0c-3aa32402885a" />
